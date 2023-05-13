@@ -58,6 +58,13 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
+header {
+  display: block;
+  height:100vh;
+  width:100%;
+  box-sizing:border-box;
+}
+
 body {
   margin: 0;
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -6094,7 +6101,18 @@ a.close.disabled {
   vertical-align: text-top !important;
 }
 
+.bg-sky {
+
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.8)), url("/../../../../static/Core/assets/img/Sky.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+  
 .bg-primary {
+
   background-color: #f69454 !important;
 }
 

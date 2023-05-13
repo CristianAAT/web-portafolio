@@ -2,7 +2,7 @@
 <section class="page-section" id="contact">
     <div class="container">
         <!-- Contact Section Heading-->
-        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contactame</h2>
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Mail me</h2>
         <!-- Icon Divider-->
         <div class="divider-custom">
             <div class="divider-custom-line"></div>
@@ -17,10 +17,10 @@
                     {% csrf_token %}
                     <div id="success">
                         {% if 'ok' in request.GET %}
-                        <p class="text-success h5">* Mensaje enviado correctamente!</p>
+                        <p class="text-success h5">* Message sent!</p>
                         {% endif %}
                         {% if 'fail' in request.GET %}
-                        <p class="text-danger h5">* Sucedio un error al enviar el mensaje :(</p>
+                        <p class="text-danger h5">* There was an error sending the message :(</p>
                         {% endif %}
                     </div>
                     <div class="control-group mb-3">
@@ -49,7 +49,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group"><button class="btn btn-primary btn-block" id="sendMessageButton" type="submit">Enviar correo</button></div>
+                    <div class="form-group"><button class="btn btn-primary btn-block" id="sendMessageButton" type="submit">Send mail</button></div>
                 </form>
             </div>
         </div>

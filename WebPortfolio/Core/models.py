@@ -5,7 +5,7 @@ from ckeditor.fields import RichTextField
 class Project (models.Model):
     name = models.CharField(
         verbose_name='Project Name',
-        max_length=20
+        max_length=50
     )
     description = RichTextField(
         verbose_name='Description'
